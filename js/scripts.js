@@ -8,23 +8,26 @@ var buttonMush = new Mushroom ("brown", "round", "single");
 var henOfTheWoods = new Mushroom ("white", "ruffled", "grouped");
 var lobster = new Mushroom ("red", "ruffled", "single");
 
-// var mushrooms = [buttonMush, henOfTheWoods, lobster]
+var mushrooms = [];
+mushrooms.push(buttonMush);
+mushrooms.push(henOfTheWoods);
+mushrooms.push(lobster);
 
-var mushrooms = [
-  { 'mushroom': 'lobster', 'color': 'red' },
-  { 'mushroom': 'hen of the woods',   'color': 'white' }
-];
+var filterCriteria = function(params){
+  var criteria = {};
+  _.forEach(params, function(param){
+    _.extend(criteria, param);
+  });
+  return criteria;
+}
 
-var filter = function (){
-  _.filter(mushrooms, { 'color': 'red'});
-};
-
+var search = filterCriteria([{color: "red"}]);
+var filteredShrooms = _.filter(mushrooms, search);
 
 $(document).ready(function(){
-  $('#results').append();
   $(".btn-info").click(function(event) {
     $("#results").show();
-
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 });
