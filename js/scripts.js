@@ -4,27 +4,27 @@ function Mushroom (color, shape, group) {
   this.group = group;
 };
 
+var buttonMush = new Mushroom ("brown", "round", "single");
+var henOfTheWoods = new Mushroom ("white", "ruffled", "grouped");
+var lobster = new Mushroom ("red", "ruffled", "single");
+
+// var mushrooms = [buttonMush, henOfTheWoods, lobster]
+
+var mushrooms = [
+  { 'mushroom': 'lobster', 'color': 'red' },
+  { 'mushroom': 'hen of the woods',   'color': 'white' }
+];
+
+var filter = function (){
+  _.filter(mushrooms, { 'color': 'red'});
+};
 
 
-
-// Mushroom.prototype.colorCalc = function () {
-//   if (this.color === "gold") {
-//     $("#chanterelle").show();
-//   } else if (this.color === "blue") {
-//     $("# ").show();
-//   } else if (this.color === "white") {
-//     $("#").show();
-//   } else {
-//     $("#").show();
-//   }
-// }
-
-var yourMushroom = new Mushroom(blue, ruffled, single);
-
-$(document).ready(function() {
+$(document).ready(function(){
+  $('#results').append();
   $(".btn-info").click(function(event) {
     $("#results").show();
 
-
+    event.preventDefault();
   });
 });
