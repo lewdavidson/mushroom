@@ -5,3 +5,15 @@ button{
 #results {
   display: none;
 }
+
+.blue-button {
+  background-image: url("../img/newblue.jpg");
+  height: 150px;
+  width: 100px;
+}
+
+.white-button {
+  background-image: url("../img/newwhite.jpg");
+  height: 150px;
+  width: 100px;
+}

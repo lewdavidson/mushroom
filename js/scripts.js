@@ -12,7 +12,7 @@ var henOfTheWoods = new Mushroom ("Hen of The Woods", "white", "ruffled", "group
 var lionsMane = new Mushroom ("Lions Mane", "white", "ruffled", "grouped");
 var lobster = new Mushroom ("Lobster", "red", "ruffled", "single");
 var blueChanterelle = new Mushroom ("Blue Chanterelle", "blue", "ruffled", "grouped");
-var indigoMilkcap = new Mushrom ("Indigo Milkcap", "blue", "concave", "single");
+var indigoMilkcap = new Mushroom ("Indigo Milkcap", "blue", "concave", "single");
 var chanterelle = new Mushroom ("Chanterelle", "gold", "ruffled", "grouped");
 var jackOLantern = new Mushroom ("Jack-O-Lantern", "gold", "concave", "grouped");
 
