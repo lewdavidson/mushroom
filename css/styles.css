@@ -3,5 +3,9 @@ button{
 }
 
 #results {
-  display:none;
+  display: none;
+}
+
+.card {
+  display: none;
 }
