@@ -7,11 +7,14 @@ function Mushroom (name, color, shape, group) {
 
 var buttonMush = new Mushroom ("Button", "brown", "round", "single");
 var morell = new Mushroom ("Morell", "brown", "spear", "single");
+var turkeyTail = new Mushroom ("Turkey Tail", "brown", "flat", "grouped");
 var henOfTheWoods = new Mushroom ("Hen of The Woods", "white", "ruffled", "grouped");
 var lionsMane = new Mushroom ("Lions Mane", "white", "ruffled", "grouped");
 var lobster = new Mushroom ("Lobster", "red", "ruffled", "single");
 var blueChanterelle = new Mushroom ("Blue Chanterelle", "blue", "ruffled", "grouped");
+var indigoMilkcap = new Mushrom ("Indigo Milkcap", "blue", "concave", "single");
 var chanterelle = new Mushroom ("Chanterelle", "gold", "ruffled", "grouped");
+var jackOLantern = new Mushroom ("Jack-O-Lantern", "gold", "concave", "grouped");
 
 
 var mushrooms = [];
@@ -21,6 +24,9 @@ mushrooms.push(lobster);
 mushrooms.push(blueChanterelle);
 mushrooms.push(chanterelle);
 mushrooms.push(morell);
+mushrooms.push(indigoMilkcap);
+mushrooms.push(turkeyTail);
+mushrooms.push(jackOLantern);
 
 var filterCriteria = function(params){
   var criteria = [];
