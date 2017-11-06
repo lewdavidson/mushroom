@@ -76,4 +76,49 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
+  $("#round").click(function(event) {
+    var search = filterCriteria([{shape: "round"}]);
+    var filteredShrooms = _.filter(mushrooms, search);
+    for(var i = 0; i < filteredShrooms.length; i++){
+      $("#results").show().append(filteredShrooms[i].name + "<br>");
+    }
+    event.preventDefault();
+  });
+
+  $("#ruffled").click(function(event) {
+    var search = filterCriteria([{shape: "ruffled"}]);
+    var filteredShrooms = _.filter(mushrooms, search);
+    for(var i = 0; i < filteredShrooms.length; i++){
+      $("#results").show().append(filteredShrooms[i].name + "<br>");
+    }
+    event.preventDefault();
+  });
+
+  $("#spear").click(function(event) {
+    var search = filterCriteria([{shape: "spear"}]);
+    var filteredShrooms = _.filter(mushrooms, search);
+    for(var i = 0; i < filteredShrooms.length; i++){
+      $("#results").show().append(filteredShrooms[i].name + "<br>");
+    }
+    event.preventDefault();
+  });
+
+  $("#flat").click(function(event) {
+    var search = filterCriteria([{shape: "flat"}]);
+    var filteredShrooms = _.filter(mushrooms, search);
+    for(var i = 0; i < filteredShrooms.length; i++){
+      $("#results").show().append(filteredShrooms[i].name + "<br>");
+    }
+    event.preventDefault();
+  });
+
+  $("#concave").click(function(event) {
+    var search = filterCriteria([{shape: "concave"}]);
+    var filteredShrooms = _.filter(mushrooms, search);
+    for(var i = 0; i < filteredShrooms.length; i++){
+      $("#results").show().append(filteredShrooms[i].name + "<br>");
+    }
+    event.preventDefault();
+  });
+
 });
