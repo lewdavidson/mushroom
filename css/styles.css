@@ -11,9 +11,17 @@ body {
 }
 
 #results {
-/*display: none; */
+  display: none;
+  margin: 20px;
 }
 
+.card {
+  margin: 20px;
+  max-width: 350px;
+  height: 450px;
+  float: left;
+  display: none;
+}
 
 .blue-button {
   background-image: url("../img/newblue.jpg");
@@ -111,12 +119,6 @@ body {
   max-height: 250px;
 }
 
-.card {
-  margin: 20px;
-  max-width: 350px;
-  height: 450px;
-  float: left;
-}
 .card:hover {
     box-shadow: 0 0 5px 1px #fff;
 

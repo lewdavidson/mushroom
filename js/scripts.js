@@ -137,27 +137,52 @@ $(document).ready(function(){
     event.preventDefault();
   });
 
-    $("#submit").click(function(event) {
-      for(var i = 0; i < filteredShrooms.length; i++){
-        $("#results").show().append(filteredShrooms[i].name + "<br>");
         // WALL OF MUSHROOM CARDS! (dry this code up?)//
-        if(filteredShrooms[i].name.includes("Chanterelle")){
-          $("#chanterelle").show();
-        }
-        if(filteredShrooms[i].name.includes("Button")){
-          $("#button").show();
-        }
-        if(filteredShrooms[i].name.includes("Morell")){
-          $("#morell").show();
-        }
-        if(filteredShrooms[i].name.includes("Turkey Tail")){
-          $("#turkeytail").show();
-        }
-      }
 
+        $("#submit").click(function(event){
+          $("#results").show();
+          for(var i = 0; i < filteredShrooms.length; i++){
+            if(filteredShrooms.includes(chanterelle)){
+              $("#chanterelle").show();
+            };
 
+            if(filteredShrooms.includes(morell)){
+              $("#morell").show();
+            };
 
-    event.preventDefault();
-  });
+            if(filteredShrooms.includes(henOfTheWoods)){
+              $("#hen").show();
+            };
 
-});
+            if(filteredShrooms.includes(buttonMush)){
+              $("#button").show();
+            };
+
+            if(filteredShrooms.includes(turkeyTail)){
+              $("#turkeytail").show();
+            };
+
+            if(filteredShrooms.includes(lionsMane)){
+              $("#lionsmane").show();
+            };
+
+            if(filteredShrooms.includes(lobster)){
+              $("#lobster").show();
+            };
+
+            if(filteredShrooms.includes(blueChanterelle)){
+              $("#bluechanterelle").show();
+            };
+
+            if(filteredShrooms.includes(indigoMilkcap)){
+              $("#indigomilkcap").show();
+            };
+
+            if(filteredShrooms.includes(jackOLantern)){
+              $("#jackolantern").show();
+            };
+
+          };
+        event.preventDefault();
+      });
+    });
