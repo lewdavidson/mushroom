@@ -142,6 +142,7 @@ $(document).ready(function(){
         $("#submit").click(function(event){
           $("#results").show();
           for(var i = 0; i < filteredShrooms.length; i++){
+
             if(filteredShrooms.includes(chanterelle)){
               $("#chanterelle").show();
             };
