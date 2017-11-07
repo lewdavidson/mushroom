@@ -13,12 +13,16 @@ Users will be able to select an answer for each question that will narrow down t
 
 Each answer will be used to filter mushrooms.
 _The more answers there are the greater the specificity._
-Not all combinations produce a mushroom result.
+
+Note: Not all combinations produce a mushroom result.
+
+---
 
 #### 1. User selects a color.
 
-* Example Input: {color: "gold"}
+* Example Input: [{color: "gold"}]
 * Example Output: [{chanterelle}, {jackOLantern}]
+
 ---
 
 #### 2. User then selects a shape.
@@ -26,6 +30,7 @@ Not all combinations produce a mushroom result.
 * Example Input: [{color: "gold"}, {shape: "ruffled"}]
 * Example Output: [{chanterelle}]
 
+---
 ## Setup/Installation Requirements
 
 #### GITHUB PAGES
@@ -44,10 +49,10 @@ _Feel free to contact Amy at amy.churchwell@gmail.com with any feedback or quest
 
 ## Technologies Used
 
-_JavaScript_
-_JQuery_
-_LoDash_
+* _JavaScript_
+* _JQuery_
+* _LoDash_
 
 ### License
 
-Copyright &copy; 2017 **_Lew Davidson, Kevin Boyle, and Amy Churchwell, Students at Epicodus._**
+Copyright &copy; 2017 **_Lew Davidson, Kevin Boyle, and Amy Churchwell._** Students at Epicodus.
