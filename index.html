@@ -14,25 +14,42 @@
         <h1 class="display-4">Mushroom Identifier</h1>
         <p class="lead">Which fungus is among-us?</p>
       </div>
-      <h4>Which color most closely represents <br>your mushroom?</h4>
-      <div class="row">
-        <button type="button" class="btn blue-button" id="blue" name="button">Blue</button>
-        <button type="button" class="btn white-button" id="white" name="button">White</button>
-      </div>
-      <div class="row">
-        <button type="button" class="btn gold-button" id="gold" name="button">Gold</button>
-        <button type="button" class="btn brown-button" id="brown" name="button">Brown</button>
-      </div>
-      <h4>Shape</h4>
-      <div class="row">
-        <button type="button" class="btn round-button shape" id="round" name="button">Round</button>
-        <button type="button" class="btn ruffled-button shape" id="ruffled" name="button">Ruffled</button>
-        <button type="button" class="btn spear-button shape" id="spear" name="button">Spear</button>
-      </div>
-      <div class="row">
-        <button type="button" class="btn flat-button shape" id="flat" name="button">Flat</button>
-        <button type="button" class="btn concave-button shape" id="concave" name="button">Concave</button>
-        <button type="button" class="btn fan-button shape" id="fan" name="button">Fanned</button>
+      <div class="questiongroup">
+        <div class="row">
+          <div class="col-md-4 questions">
+            <h4>Which color most closely represents <br>your mushroom?</h4>
+            <div class="row">
+              <button type="button" class="btn blue-button" id="blue" name="button">Blue</button>
+              <button type="button" class="btn white-button" id="white" name="button">White</button>
+            </div>
+            <div class="row">
+              <button type="button" class="btn gold-button" id="gold" name="button">Gold</button>
+              <button type="button" class="btn brown-button" id="brown" name="button">Brown</button>
+            </div>
+          </div>
+          <div class="col-md-4 questions">
+            <h4>How is it shaped?</h4>
+            <div class="row">
+              <button type="button" class="btn round-button shape" id="round" name="button">Round</button>
+              <button type="button" class="btn ruffled-button shape" id="ruffled" name="button">Ruffled</button>
+            </div>
+            <div class="row">
+              <button type="button" class="btn spear-button shape" id="spear" name="button">Spear</button>
+              <button type="button" class="btn flat-button shape" id="flat" name="button">Flat</button>
+            </div>
+            <div class="row">
+              <button type="button" class="btn concave-button shape" id="concave" name="button">Concave</button>
+              <button type="button" class="btn fan-button shape" id="fan" name="button">Fanned</button>
+            </div>
+          </div>
+          <div class="col-md-4 questions">
+            <h4>Is it grouped or alone?</h4>
+            <div class="row">
+              <button type="button" class="btn grouped-button" id="grouped" name="button">Grouped</button>
+              <button type="button" class="btn single-button" id="single" name="button">Single</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="answers" id="results">
@@ -43,11 +60,11 @@
               <div class="card-body">
                 <h3 class="card-title">Morel</h3>
                 <ul>
-                  <li>Origin:</li>
-                  <li>Edible:</li>
-                  <li>Ideal Habitat:</li>
-                  <li>Pairs Well With:</li>
-                  <li>links and stuff</li>
+                  <li>Origin: France, Germany, USA</li>
+                  <li>Edible: Yes! Beware of imposters!</li>
+                  <li>ID Tips: Cup is longer than the stem, hollow on the inside, available only in spring. Toxic look-alikes will have stuffing inside, the cap is loose from the stem and equal in size.</li>
+                  <li>Pairs Well With: Butter, Garlic, White Meat. They are best simply sauted in butter with good salt but can be added to delicate protiens that won't mask their flavor.</li>
+                  <li><a href="https://en.wikipedia.org/wiki/Morchella_esculenta">Learn More</a></li>
                 </ul>
               </div>
             </div>
@@ -58,26 +75,26 @@
                 <div class="card-body">
                   <h3 class="card-title">Chanterelle</h3>
                   <ul>
-                    <li>Origin:</li>
-                    <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
-                    <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Origin:North America</li>
+                    <li>Edible: Yes! But beware of imposters!</li>
+                    <li>ID Tips: Bright yellow-gold in color, always found near trees, gills are solidly part of the cap and stem (not removeable). Imposters include the Jack-O-Lantern and "False Chanterelle" mushrooms. They are both more orange in color with removeable gills.</li>
+                    <li>Pairs Well With: Butter and garlic. Make sure they are dried well so you can ent up with a crispy-edged tender mushroom!</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Chanterelle">Learn More</a></li>
                   </ul>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card" style="width: 25rem;" id="hen-card">
+            <div class="card" style="width: 25rem;" id="hencard">
               <img class="card-img-top" src="img/hen-answer.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h3 class="card-title">Hen of the Woods</h3>
                   <ul>
                     <li>Origin:</li>
                     <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
+                    <li>ID Tips:</li>
                     <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Learn More</li>
                   </ul>
               </div>
             </div>
@@ -85,46 +102,93 @@
         </div>
         <div class="row">
           <div class="col-md-4">
-            <div class="card" style="width: 25rem;" id="turkeytail-card">
+            <div class="card" style="width: 25rem;" id="turkeytailcard">
               <img class="card-img-top" src="img/turkeytail-answer.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h3 class="card-title">Turkey Tail</h3>
                   <ul>
                     <li>Origin:</li>
                     <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
+                    <li>ID Tips:</li>
                     <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Learn More</li>
                   </ul>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card" style="width: 25rem;" id="lobster-card">
+            <div class="card" style="width: 25rem;" id="lobstercard">
               <img class="card-img-top" src="img/lobster-answer.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h3 class="card-title">Lobster Mushroom</h3>
                   <ul>
                     <li>Origin:</li>
                     <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
+                    <li>ID Tips:</li>
                     <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Learn More</li>
                   </ul>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card" style="width: 25rem;" id="lionsmane-card">
+            <div class="card" style="width: 25rem;" id="lionsmanecard">
               <img class="card-img-top" src="img/lions-mane-answer.jpg" alt="Card image cap">
                 <div class="card-body">
                   <h3 class="card-title">Lion's Mane</h3>
                   <ul>
                     <li>Origin:</li>
                     <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
+                    <li>ID Tips:</li>
                     <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Learn More</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card" style="width: 25rem;" id="jackcard">
+              <img class="card-img-top" src="img/jackolantern-answer.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h3 class="card-title">Jack-O-Lantern</h3>
+                <ul>
+                  <li>Origin:</li>
+                  <li>Edible:</li>
+                  <li>ID Tips:</li>
+                  <li>Pairs Well With:</li>
+                  <li>Learn More</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 25rem;">
+              <img class="card-img-top" src="img/blue-chanterelle-answer.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title">Blue Chanterelle</h3>
+                  <ul>
+                    <li>Origin:</li>
+                    <li>Edible:</li>
+                    <li>ID Tips:</li>
+                    <li>Pairs Well With:</li>
+                    <li>Learn More</li>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card" style="width: 25rem;">
+              <img class="card-img-top" src="img/button-answer.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h3 class="card-title">Button</h3>
+                  <ul>
+                    <li>Origin:</li>
+                    <li>Edible:</li>
+                    <li>ID Tips:</li>
+                    <li>Pairs Well With:</li>
+                    <li>Learn More</li>
                   </ul>
               </div>
             </div>
@@ -133,50 +197,51 @@
         <div class="row">
           <div class="col-md-4">
             <div class="card" style="width: 25rem;" id="">
-              <img class="card-img-top" src="img/morel-answer.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/indigo-answer.jpg" alt="Card image cap">
               <div class="card-body">
-                <h3 class="card-title">Morel</h3>
+                <h3 class="card-title">Indigo Milkcap</h3>
                 <ul>
                   <li>Origin:</li>
                   <li>Edible:</li>
-                  <li>Ideal Habitat:</li>
+                  <li>ID Tips:</li>
                   <li>Pairs Well With:</li>
-                  <li>links and stuff</li>
+                  <li>Learn More</li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card" style="width: 25rem;">
-              <img class="card-img-top" src="img/chanterelle-answer.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/white-color.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h3 class="card-title">Chanterelle</h3>
+                  <h3 class="card-title">Random Placeholder</h3>
                   <ul>
                     <li>Origin:</li>
                     <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
+                    <li>ID Tips:</li>
                     <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Learn More</li>
                   </ul>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card" style="width: 25rem;">
-              <img class="card-img-top" src="img/hen-answer.jpg" alt="Card image cap">
+              <img class="card-img-top" src="img/white-color.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h3 class="card-title">Hen of the Woods</h3>
+                  <h3 class="card-title">Random placeholder</h3>
                   <ul>
                     <li>Origin:</li>
                     <li>Edible:</li>
-                    <li>Ideal Habitat:</li>
+                    <li>ID Tips:</li>
                     <li>Pairs Well With:</li>
-                    <li>links and stuff</li>
+                    <li>Learn More</li>
                   </ul>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </div> <!-- end of container -->
   </body>
