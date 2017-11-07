@@ -16,6 +16,14 @@ var blueChanterelle = new Mushroom ("Blue Chanterelle", "blue", "ruffled", "grou
 var indigoMilkcap = new Mushroom ("Indigo Milkcap", "blue", "round", "single");
 var chanterelle = new Mushroom ("Chanterelle", "gold", "ruffled", "grouped");
 var jackOLantern = new Mushroom ("Jack-O-Lantern", "gold", "concave", "grouped");
+var enoki = new Mushroom ("Enoki", "white", "round", "grouped");
+var cloudEar = new Mushroom ("Cloud Ear", "brown", "fanned", "grouped");
+var honshimeji = new Mushroom ("Honshimeji", "brown", "round", "grouped");
+var matsutake = new Mushroom ("Matsutake", "brown", "round", "single");
+var eryngii = new Mushroom ("Peurotus Eryngii", "brown", "flat", "grouped");
+var shiitake = new Mushroom ("Shiitake", "brown", "round", "single");
+var whiteBeech = new Mushroom ("White Beech", "white", "round", "grouped");
+var woodEar = new Mushroom ("Wood Ear", "brown", "fanned", "grouped");
 
 
 var mushrooms = [];
@@ -28,6 +36,15 @@ mushrooms.push(morell);
 mushrooms.push(indigoMilkcap);
 mushrooms.push(turkeyTail);
 mushrooms.push(jackOLantern);
+mushrooms.push(enoki);
+mushrooms.push(cloudEar);
+mushrooms.push(honshimeji);
+mushrooms.push(matsutake);
+mushrooms.push(eryngii);
+mushrooms.push(shiitake);
+mushrooms.push(whiteBeech);
+mushrooms.push(woodEar);
+
 
 var filterCriteria = function(params){
   var criteria = [];
@@ -83,7 +100,7 @@ $(document).ready(function(){
     searchParams = filterCriteria(searchFor);
     filteredShrooms = _.filter(mushrooms, searchParams);
     for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
+      $("#results").show();
     }
     event.preventDefault();
   });
@@ -181,6 +198,38 @@ $(document).ready(function(){
 
             if(filteredShrooms.includes(jackOLantern)){
               $("#jackolantern").show();
+            };
+
+            if(filteredShrooms.includes(enoki)){
+              $("#enoki").show();
+            };
+
+            if(filteredShrooms.includes(cloudEar)){
+              $("#cloudear").show();
+            };
+
+            if(filteredShrooms.includes(honshimeji)){
+              $("#honshimeji").show();
+            };
+
+            if(filteredShrooms.includes(matsutake)){
+              $("#matsutake").show();
+            };
+
+            if(filteredShrooms.includes(eryngii)){
+              $("#peurotuseryngii").show();
+            };
+
+            if(filteredShrooms.includes(shiitake)){
+              $("#shiitake").show();
+            };
+
+            if(filteredShrooms.includes(whiteBeech)){
+              $("#whitebeech").show();
+            };
+
+            if(filteredShrooms.includes(woodEar)){
+              $("#woodear").show();
             };
 
           };
