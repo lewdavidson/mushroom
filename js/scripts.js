@@ -5,6 +5,7 @@ function Mushroom (name, color, shape, group) {
   this.group = group;
 };
 
+// DONT FORGET TO PUSH NEW SHROOMS :) //
 var buttonMush = new Mushroom ("Button", "brown", "round", "single");
 var morell = new Mushroom ("Morell", "brown", "spear", "single");
 var turkeyTail = new Mushroom ("Turkey Tail", "brown", "flat", "grouped");
@@ -12,7 +13,7 @@ var henOfTheWoods = new Mushroom ("Hen of The Woods", "white", "ruffled", "group
 var lionsMane = new Mushroom ("Lions Mane", "white", "ruffled", "grouped");
 var lobster = new Mushroom ("Lobster", "red", "ruffled", "single");
 var blueChanterelle = new Mushroom ("Blue Chanterelle", "blue", "ruffled", "grouped");
-var indigoMilkcap = new Mushroom ("Indigo Milkcap", "blue", "concave", "single");
+var indigoMilkcap = new Mushroom ("Indigo Milkcap", "blue", "round", "single");
 var chanterelle = new Mushroom ("Chanterelle", "gold", "ruffled", "grouped");
 var jackOLantern = new Mushroom ("Jack-O-Lantern", "gold", "concave", "grouped");
 
@@ -36,49 +37,51 @@ var filterCriteria = function(params){
   return criteria;
 };
 
-var search = filterCriteria([{color: "blue"}]);
-var filteredShrooms = _.filter(mushrooms, search);
+var searchFor = [];
+var searchParams = [];
+var filteredShrooms;
+
+//COLOR SELECTION//
 
 $(document).ready(function(){
   $("#blue").click(function(event) {
-    var search = filterCriteria([{color: "blue"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({color: "blue"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
   $("#white").click(function(event) {
-    var search = filterCriteria([{color: "white"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({color: "white"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
   $("#gold").click(function(event) {
-    var search = filterCriteria([{color: "gold"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({color: "gold"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
   $("#brown").click(function(event) {
-    var search = filterCriteria([{color: "brown"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({color: "brown"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
+//SHAPE SELECTION//
+
   $("#round").click(function(event) {
-    var search = filterCriteria([{shape: "round"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
+    searchFor.push({shape: "round"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
     for(var i = 0; i < filteredShrooms.length; i++){
       $("#results").show().append(filteredShrooms[i].name + "<br>");
     }
@@ -86,38 +89,74 @@ $(document).ready(function(){
   });
 
   $("#ruffled").click(function(event) {
-    var search = filterCriteria([{shape: "ruffled"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({shape: "ruffled"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
   $("#spear").click(function(event) {
-    var search = filterCriteria([{shape: "spear"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({shape: "spear"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
   $("#flat").click(function(event) {
-    var search = filterCriteria([{shape: "flat"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({shape: "flat"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
   $("#concave").click(function(event) {
-    var search = filterCriteria([{shape: "concave"}]);
-    var filteredShrooms = _.filter(mushrooms, search);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show().append(filteredShrooms[i].name + "<br>");
-    }
+    searchFor.push({shape: "concave"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
+    event.preventDefault();
+  });
+
+//GROUP SELECTION//
+  $("#single").click(function(event) {
+    searchFor.push({group: "single"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
+    event.preventDefault();
+  });
+
+  $("#grouped").click(function(event) {
+    searchFor.push({group: "grouped"});
+    searchParams = filterCriteria(searchFor);
+    filteredShrooms = _.filter(mushrooms, searchParams);
+    console.log(filteredShrooms);
+    event.preventDefault();
+  });
+
+    $("#submit").click(function(event) {
+      for(var i = 0; i < filteredShrooms.length; i++){
+        $("#results").show().append(filteredShrooms[i].name + "<br>");
+        // WALL OF MUSHROOM CARDS! (dry this code up?)//
+        if(filteredShrooms[i].name.includes("Chanterelle")){
+          $("#chanterelle").show();
+        }
+        if(filteredShrooms[i].name.includes("Button")){
+          $("#button").show();
+        }
+        if(filteredShrooms[i].name.includes("Morell")){
+          $("#morell").show();
+        }
+        if(filteredShrooms[i].name.includes("Turkey Tail")){
+          $("#turkeytail").show();
+        }
+      }
+
+
+
     event.preventDefault();
   });
 
