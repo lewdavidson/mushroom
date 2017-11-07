@@ -17,3 +17,15 @@ button{
   height: 150px;
   width: 100px;
 }
+
+.gold-button {
+  background-image: url("../img/newgold.jpg");
+  height: 150px;
+  width: 100px;
+}
+
+.brown-button {
+  background-image: url("../img/newbrown.jpg");
+  height: 150px;
+  width: 100px;
+}

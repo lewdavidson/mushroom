@@ -36,8 +36,8 @@ var filterCriteria = function(params){
   return criteria;
 };
 
-// var search = filterCriteria([{color: "red"}]);
-
+var search = filterCriteria([{color: "blue"}]);
+var filteredShrooms = _.filter(mushrooms, search);
 
 $(document).ready(function(){
   $("#blue").click(function(event) {
