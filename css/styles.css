@@ -2,10 +2,122 @@ button{
   margin: 15px;
 }
 
-#results {
-  display: none;
+button:hover {
+  box-shadow: 0 0 5px 1px #fff;
 }
 
-#chanterelle {
-  display: none;
+body {
+  background-color: #82A172;
+}
+
+#results {
+/*display: none; */
+}
+
+
+.blue-button {
+  background-image: url("../img/newblue.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.white-button {
+  background: url("../img/newwhite.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  font-size: 20px;
+}
+
+.gold-button {
+  background-image: url("../img/newgold.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.brown-button {
+  background-image: url("../img/newbrown.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+.round-button {
+  background-image: url("../img/round.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.flat-button {
+  background: url("../img/flattop.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.spear-button {
+  background-image: url("../img/spear.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.concave-button {
+  background-image: url("../img/concave2.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+.ruffled-button {
+  background-image: url("../img/lionsmane.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.fan-button {
+  background-image: url("../img/ruffled.jpg");
+  height: 150px;
+  width: 100px;
+  border-radius: 10%;
+  color: white;
+  font-size: 20px;
+}
+
+.jumbotron {
+  background-image: url("../img/forest.jpg");
+  color: white;
+}
+
+.card-img-top {
+  max-height: 250px;
+}
+
+.card {
+  margin: 20px;
+  max-width: 350px;
+  height: 450px;
+  float: left;
+}
+.card:hover {
+    box-shadow: 0 0 5px 1px #fff;
+
 }
