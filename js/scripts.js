@@ -61,7 +61,7 @@ var filteredShrooms;
 //COLOR SELECTION//
 
 $(document).ready(function(){
-  $("#arrow").click(function(){
+  $("#top-arrow").click(function(){
     $("#jumbo").slideUp();
   });
 
@@ -160,7 +160,8 @@ $(document).ready(function(){
 
         // WALL OF MUSHROOM CARDS! (dry this code up?)//
 
-        $("#submit").click(function(event){
+        $("#bottom-arrow").click(function(event){
+          $(".main-page").slideUp();
           $("#results").show();
           for(var i = 0; i < filteredShrooms.length; i++){
 

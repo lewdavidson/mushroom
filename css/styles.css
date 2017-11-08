@@ -95,7 +95,9 @@ hr{
   margin: 20px;
 }
 
-
+.card-img-top {
+  height: 300px;
+}
 
 .card {
   margin: 20px;
@@ -106,16 +108,26 @@ hr{
   text-overflow: clip;
   overflow: hidden;
   white-space: normal;
+  border-radius: 25px;
+  border: solid 1px;
+  background-color: #f6d1de47;
 }
 
 .bestguess {
   margin-bottom: 150px;
 }
 
+.card-body ul {
+  list-style-image: url("../img/mush-ul.png");
+}
+
+container #answers {
+  width: 100%
+}
 #answers {
   width: 100%;
   max-height: 3000px;
-  overflow: scroll;
+  overflow-x: scroll;
   white-space: nowrap;
 }
 
@@ -161,6 +173,9 @@ hr{
     border-radius: 100%;
 }
 
+.rightarrow {
+  margin-left: 50%;
+}
 span {
     z-index: 999;
     height: 3px;
@@ -221,4 +236,10 @@ span:nth-child(4) {
 
 .card-img-top {
   max-height: 250px;
+}
+
+#submit {
+  width: 100%;
+  margin-top: 60px;
+  height: 70px;
 }
