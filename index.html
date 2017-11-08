@@ -5,6 +5,7 @@
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Carme" rel="stylesheet">
     <title>Mushroom Identifier</title>
@@ -27,46 +28,69 @@
           </div>
         </div>
       </div>
-      <div class="container">
-      <div class="questiongroup">
-        <div class="row">
-          <div class="col-md-4 questions">
-            <h4>Which color most closely represents <br>your mushroom?</h4>
-            <div class="row">
-              <button type="button" class="btn blue-button" id="blue" name="button">Blue</button>
-              <button type="button" class="btn white-button" id="white" name="button">White</button>
-            </div>
-            <div class="row">
-              <button type="button" class="btn gold-button" id="gold" name="button">Gold</button>
-              <button type="button" class="btn brown-button" id="brown" name="button">Brown</button>
-            </div>
-          </div>
-          <div class="col-md-4 questions">
-            <h4>How is it shaped?</h4>
-            <div class="row">
-              <button type="button" class="btn round-button shape" id="round" name="button">Round</button>
-              <button type="button" class="btn ruffled-button shape" id="ruffled" name="button">Ruffled</button>
-            </div>
-            <div class="row">
-              <button type="button" class="btn spear-button shape" id="spear" name="button">Spear</button>
-              <button type="button" class="btn flat-button shape" id="flat" name="button">Flat</button>
-            </div>
-            <div class="row">
-              <button type="button" class="btn concave-button shape" id="concave" name="button">Concave</button>
-              <button type="button" class="btn fan-button shape" id="fan" name="button">Fanned</button>
-            </div>
-          </div>
-          <div class="col-md-4 questions">
-            <h4>Is it grouped or alone?</h4>
-            <div class="row">
-              <button type="button" class="btn grouped-button" id="grouped" name="button">Grouped</button>
-              <button type="button" class="btn single-button" id="single" name="button">Single</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <button type="button" class="btn btn-light" id="submit" name="button">Our best guesses!</button>
+
+
+<!-- Q: COLOR -->
+
+
+<div class="row">
+  <div class="col-sm-9 offset-md-2">
+    <h4>Which color most closely represents <br>your mushroom?</h4>
+    <div class="row">
+      <div class="col-8 col-sm-6">
+        <button type="button" class="btn select btn-primary" id="blue" name="button">Blue</button>
+        <button type="button" class="btn select btn-primary" id="white" name="button">White</button>
+      </div>
+      <div class="col-4 col-sm-6">
+        <button type="button" class="btn select btn-primary" id="gold" name="button">Gold</button>
+        <button type="button" class="btn select btn-primary" id="brown" name="button">Brown</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Q: SHAPE -->
+
+<div class="row">
+  <div class="col-sm-9 offset-md-2">
+    <h4>How is it shaped?</h4>
+    <div class="row">
+      <div class="col-4">
+        <button type="button" class="btn select btn-dark" id="round" name="button">Round</button>
+        <button type="button" class="btn select btn-dark" id="ruffled" name="button">Ruffled</button>
+      </div>
+      <div class="col-4 ">
+        <button type="button" class="btn select btn-dark" id="spear" name="button">Spear</button>
+        <button type="button" class="btn select btn-dark" id="flat" name="button">Flat</button>
+      </div>
+      <div class="col-4 ">
+        <button type="button" class="btn select btn-dark" id="concave" name="button">Concave</button>
+        <button type="button" class="btn select btn-dark" id="fan" name="button">Fanned</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Q: GROUPED -->
+
+<div class="row">
+  <div class="col-sm-9 offset-md-2">
+    <h4>Is it grouped or alone?</h4>
+    <div class="row">
+      <div class="col-8 col-sm-6">
+        <button type="button" class="btn select pick btn-dark" id="grouped" name="button">Grouped</button>
+        <button type="button" class="btn select pick btn-dark" id="single" name="button">Single</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-9 offset-md-2">
+    <button type="button" class="btn btn-lg btn-dark" id="submit" name="button">Our best guesses!</button>
+  </div>
+</div>
 
 <!-- RESULTS -->
 

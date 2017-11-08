@@ -1,13 +1,28 @@
-button{
-  margin: 15px;
+/*button styles*/
+
+.select{
+  margin: 10px;
+  height: 200px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
 }
 
-button:hover {
-  box-shadow: 0 0 5px 1px #fff;
+.select:active{
+  font-weight: bold;
 }
 
-body {
-  background-color: #82A172;
+/*button shapes*/
+
+#round{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/round.jpg);
+  background-position: center -67px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 0 0 3px black, 0 0 5px black;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  font-size: 20px;
 }
 
 #results {
@@ -28,110 +43,6 @@ body {
   padding-left: 20px;
 }
 
-.blue-button {
-  background-image: url("../img/newblue.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.white-button {
-  background: url("../img/newwhite.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  font-size: 20px;
-}
-
-.gold-button {
-  background-image: url("../img/newgold.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.brown-button {
-  background-image: url("../img/newbrown.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-.round-button {
-  background-image: url("../img/round.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.flat-button {
-  background: url("../img/flattop.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.spear-button {
-  background-image: url("../img/spear.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.concave-button {
-  background-image: url("../img/concave2.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-.ruffled-button {
-  background-image: url("../img/lionsmane.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.fan-button {
-  background-image: url("../img/ruffled.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.grouped-button {
-  background-image: url("../img/newgrouped.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
-
-.single-button {
-  background-image: url("../img/newsingle.jpg");
-  height: 150px;
-  width: 100px;
-  border-radius: 10%;
-  color: white;
-  font-size: 20px;
-}
 
 #jumbo {
   height: 700px;
@@ -229,17 +140,4 @@ span:nth-child(4) {
 
 .card-img-top {
   max-height: 250px;
-}
-
-<<<<<<< HEAD
-.card {
-  margin: 20px;
-  max-width: 350px;
-  float: left;
-}
-=======
->>>>>>> c950747f9f5be5027c0876b242a2f9858f5e2d7b
-.card:hover {
-    box-shadow: 0 0 5px 1px #fff;
-
 }
