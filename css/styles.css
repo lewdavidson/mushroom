@@ -11,8 +11,8 @@ body {
 }
 
 #results {
-  display: none;
-  margin: 20px;
+  display: block;
+  margin: 40px;
 }
 
 .card {
