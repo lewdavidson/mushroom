@@ -61,6 +61,10 @@ var filteredShrooms;
 //COLOR SELECTION//
 
 $(document).ready(function(){
+  $("#arrow").click(function(){
+    $("#jumbo").slideUp();
+  });
+
   $("#blue").click(function(event) {
     searchFor.push({color: "blue"});
     searchParams = filterCriteria(searchFor);

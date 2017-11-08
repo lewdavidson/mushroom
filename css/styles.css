@@ -133,10 +133,99 @@ body {
   font-size: 20px;
 }
 
-.jumbotron {
-  background-image: url("../img/forest.jpg");
-  color: white;
+#jumbo {
+  height: 700px;
+  background-image: url("../img/new-header.jpg");
+  repeat: no-repeat;
+  background-size: cover;
 }
+
+#jumbo h1 {
+  text-align: center;
+  position: absolute;
+  margin-bottom: 10px;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #00000082;
+  width: 100%;
+  font-family: 'Carme', sans-serif;
+}
+  /*button*/
+.center-con {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.round {
+    position: relative;
+    border: 3px solid #fff;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+span {
+    z-index: 999;
+    height: 3px;
+    margin:1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 35%;
+}
+
+span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 35%;
+}
+
+span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(45deg);
+    left: 25%;
+    bottom: 54%;
+}
+
+span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 45%;
+    bottom: 54%;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-135deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(135deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(225deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-225deg);
+} /*button*/
+
 
 .card-img-top {
   max-height: 250px;
