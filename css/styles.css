@@ -1,3 +1,24 @@
+div .topper{
+  border-top: 1px solid #d8d8d8;
+  margin: 20px;
+  padding-top: 10px;
+}
+
+.icon{
+  float: left;
+  margin: 25px;
+}
+
+.question{
+  margin-bottom: 50px;
+}
+
+hr{
+  border: 4px solid #d8d8d8;
+}
+
+
+
 /*button styles*/
 
 .select{
@@ -6,10 +27,14 @@
   width: 300px;
   border-radius: 25px;
   border: none;
+  font-size: 20px;
+  text-shadow: 3px 0px 8px #000000;
 }
 
-.select:active{
-  font-weight: bold;
+
+.select:focus{
+  text-decoration: underline;
+  font-size: 25px;
 }
 
 /*button shapes*/
@@ -20,10 +45,50 @@
   background-position: center -67px;
   background-repeat: no-repeat;
   background-size: cover;
-  text-shadow: 0 0 3px black, 0 0 5px black;
-  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
-  font-size: 20px;
 }
+
+#spear{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/spear.jpg);
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#concave{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/concave.jpg);
+  background-position: center -67px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#ruffled{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/ruffled.jpg);
+  background-position: center -67px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#flat{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/flat.jpg);
+  background-position: center -67px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#fan{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/fanned.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*button groups*/
 
 #results {
   display: none;
@@ -38,16 +103,6 @@
   display: none;
 }
 
-.questiongroup {
-  margin: 35px;
-  padding-left: 20px;
-}
-
-
-.jumbotron {
-  background-image: url("../img/forest.jpg");
-  color: white;
-}
 
 .card-img-top {
   max-height: 250px;
