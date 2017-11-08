@@ -1,7 +1,28 @@
-button{
-  margin: 15px;
+/*button styles*/
+
+.select{
+  margin: 10px;
   height: 200px;
-  width: 400px;
+  width: 300px;
+  border-radius: 25px;
+  border: none;
+}
+
+.select:active{
+  font-weight: bold;
+}
+
+/*button shapes*/
+
+#round{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/round.jpg);
+  background-position: center -67px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-shadow: 0 0 3px black, 0 0 5px black;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  font-size: 20px;
 }
 
 #results {
