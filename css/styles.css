@@ -24,7 +24,10 @@ div .topper{
     background-image: -webkit-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
     background-image: -moz-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
     background-image: radial-gradient(circle at 50% 0%, white 48%, #adc2bb 55%);
+    
 }
+
+
 
 .stripe{
   background-color: #adc2bb;
