@@ -86,7 +86,7 @@
   </div>
 </div>
 
-<div class="row">
+<div class="row bestguess">
   <div class="col-sm-9 offset-md-2">
     <button type="button" class="btn btn-lg btn-dark" id="submit" name="button">Our best guesses!</button>
   </div>
@@ -95,26 +95,28 @@
 <!-- RESULTS -->
 
       <div class="answers" id="results">
-        <!-- <div class="row"> -->
+        <div class="container" id="answers">
           <!-- <div class="col-md-4"> -->
             <div class="card" style="width: 25rem;" id="morell">
               <img class="card-img-top" src="img/morel-answer.jpg" alt="Card image cap">
               <div class="card-body">
                 <h3 class="card-title">Morel</h3>
-                <ul>
-                  <li>Origin: France, Germany, USA</li>
-                  <li>Edible: Yes! Beware of imposters!</li>
-                  <li>ID Tips: Cup is longer than the stem, hollow on the inside, available only in spring. Toxic look-alikes will have stuffing inside, the cap is loose from the stem and equal in size.</li>
-                  <li>Pairs Well With: Butter, Garlic, White Meat. They are best simply sauted in butter with good salt but can be added to delicate protiens that won't mask their flavor.</li>
-                  <li><a href="https://en.wikipedia.org/wiki/Morchella_esculenta">Learn More</a></li>
-                </ul>
+                <p class="nowrap">
+                  <ul>
+                    <li>Origin: France, Germany, USA</li>
+                    <li>Edible: Yes! Beware of imposters!</li>
+                    <li>ID Tips: Cup is longer than the stem, hollow on the inside, available only in spring. Toxic look-alikes will have stuffing inside, the cap is loose from the stem and equal in size.</li>
+                    <li>Pairs Well With: Butter, Garlic, White Meat. They are best simply sauted in butter with good salt but can be added to delicate protiens that won't mask their flavor.</li>
+                    <li><a href="https://en.wikipedia.org/wiki/Morchella_esculenta">Learn More</a></li>
+                  </ul>
+                </p>
               </div>
             </div>
           <!-- </div> -->
           <!-- <div class="col-md-4"> -->
             <div class="card" style="width: 25rem;" id="chanterelle">
               <img class="card-img-top" src="img/chanterelle-answer.jpg" alt="Card image cap">
-                <div class="card-body">
+                <div class="card-body" id="nowrap">
                   <h3 class="card-title">Chanterelle</h3>
                   <ul>
                     <li>Origin:North America</li>
@@ -404,7 +406,7 @@
               </div>
             </div>
           <!-- </div> -->
-        <!-- </div> -->
+        </div>
 
       </div>
     </div> <!-- end of container -->
