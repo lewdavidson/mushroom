@@ -4,6 +4,32 @@ div .topper{
   padding-top: 10px;
 }
 
+.bordered{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    border-bottom: 20px solid white;
+    background: white;
+    padding-top: 10px;
+}
+.bordered:after{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 0px;
+    height: 10px;
+    width: 100%;
+    background-size: 16px 15px;
+    background-position: -5px -5px;
+    background-image: -webkit-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
+    background-image: -moz-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
+    background-image: radial-gradient(circle at 50% 0%, white 48%, #adc2bb 55%);
+}
+
+.stripe{
+  background-color: #adc2bb;
+}
+
 .icon{
   float: left;
   margin: 25px;
@@ -26,7 +52,7 @@ hr{
   height: 200px;
   width: 300px;
   border-radius: 25px;
-  border: none;
+  border: 1px solid #BDC3C7;
   font-size: 20px;
   text-shadow: 3px 0px 8px #000000;
 }
@@ -35,6 +61,42 @@ hr{
 .select:focus{
   text-decoration: underline;
   font-size: 25px;
+}
+
+/*button colors*/
+
+#blue{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/blue.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#gold{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/gold.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#white{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/white.jpg);
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#brown{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/brown.jpg);
+  background-color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 160%;
 }
 
 /*button shapes*/
@@ -152,7 +214,7 @@ container #answers {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  background-color: #00000082;
+  background-color: #000000b5;
   width: 100%;
   font-family: 'Carme', sans-serif;
 }
