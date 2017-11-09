@@ -53,8 +53,7 @@ hr {
   width: 300px;
   border-radius: 25px;
   border: 1px solid #BDC3C7;
-  font-size: 20px;
-  text-shadow: 3px 0px 8px #000000;
+  color: black;
 }
 
 
@@ -104,7 +103,7 @@ hr {
 #round{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/round.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,7 +119,7 @@ hr {
 #concave{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/concave.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -128,7 +127,7 @@ hr {
 #ruffled{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/ruffled.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -136,7 +135,7 @@ hr {
 #flat{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/flat.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -151,6 +150,23 @@ hr {
 }
 
 /*button groups*/
+
+#grouped{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/grouped.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#single{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/single.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 #results {
   /*display: none;*/
