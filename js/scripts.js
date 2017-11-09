@@ -61,6 +61,7 @@ var filteredShrooms;
 //COLOR SELECTION//
 
 $(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip()
   $("#submit").click(function(){
     $("#results").show();
   });
