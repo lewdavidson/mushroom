@@ -179,7 +179,7 @@ hr {
 
 .card {
   margin: 20px;
-  height: 700px;
+  height: 800px;
   max-width: 350px;
   float: none;
   display: inline-block;
@@ -196,7 +196,21 @@ hr {
 }
 
 #disclaimer {
+  background-color: #adc2bb;
+}
 
+.centered {
+  text-align: center;
+}
+
+.refresh {
+  background-color: #83dcff;
+  color: white;
+  border: solid 1px black;
+}
+
+.refresh:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .card-body ul {
