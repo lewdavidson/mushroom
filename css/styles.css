@@ -254,16 +254,20 @@ hr {
   font-family: 'Carme', sans-serif;
 }
 
-#bottom-arrow {
-  margin top: 20px;
-  margin-bottom: 20px;
-  display
-}
 
 #submit {
-  width: 100%;
-  margin-top: 60px;
-  height: 70px;
+  width: 50%;
+  margin-left: 22%;
+  margin-top: 50px;
+  border-radius: 25px;
+  font-family: 'Carme', sans-serif;
+  height: 50px;
+  background-color: #adc2bb;
+  border: solid 1px black;
+}
+
+#submit:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
   /*.bestguess {
@@ -271,12 +275,15 @@ hr {
   }*/
 
   /*button*/
+#top-arrow {
+  margin-top: 90px;
+}
+
 .center-con {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
 }
 
 .round {
@@ -354,8 +361,7 @@ span:nth-child(4) {
 }
 
 
-
-
 .carouseldiv {
   margin-bottom: 50px;
 }
+
