@@ -27,12 +27,13 @@ div .topper{
     left: 0px;
     height: 10px;
     width: 100%;
-    background-size: 16px 15px;
+    background-size: 26px 25px;
     background-position: -5px -5px;
     background-image: -webkit-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
     background-image: -moz-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
     background-image: radial-gradient(circle at 50% 0%, white 48%, #adc2bb 55%);
 }
+
 
 .stripe{
   background-color: #adc2bb;
@@ -205,8 +206,13 @@ hr {
   text-align: center;
 }
 
+.wrapper {
+  margin-bottom: 30px;
+}
+
 #disclaimer {
   background-color: #adc2bb;
+  display: none;
 }
 
 .centered {
@@ -287,7 +293,7 @@ hr {
 }
 
 #top-arrow {
-  margin-top: 90px;
+  margin-top: -40px;
 }
 
 .center-con {
