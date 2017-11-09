@@ -61,8 +61,8 @@ var filteredShrooms;
 //COLOR SELECTION//
 
 $(document).ready(function(){
-  $("#top-arrow").click(function(){
-    $("#jumbo").slideUp();
+  $("#submit").click(function(){
+    $("#results").show();
   });
 
 
@@ -104,9 +104,7 @@ $(document).ready(function(){
     searchFor.push({shape: "round"});
     searchParams = filterCriteria(searchFor);
     filteredShrooms = _.filter(mushrooms, searchParams);
-    for(var i = 0; i < filteredShrooms.length; i++){
-      $("#results").show();
-    }
+    console.log(filteredShrooms);
     event.preventDefault();
   });
 
