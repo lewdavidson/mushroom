@@ -186,7 +186,8 @@ hr {
 #grouped{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/grouped.jpg);
-  background-position: center;
+  background-position: 163px 15px;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -267,12 +268,10 @@ hr {
 
 
 #jumbo {
-  height: 700px;
+  height: 900px;
   background-image: url("../img/mushroom-header.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-
-
+  background-size: cover;
 }
 
 #jumbo h1 {
@@ -282,10 +281,10 @@ hr {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+  color: #a5ffe8;
   background-color: #000000b5;
   width: 100%;
-  font-family: 'Carme', sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 
@@ -294,7 +293,6 @@ hr {
   margin-left: 22%;
   margin-top: 50px;
   border-radius: 25px;
-  font-family: 'Carme', sans-serif;
   height: 50px;
   background-color: #adc2bb;
   border: solid 1px black;
@@ -398,4 +396,3 @@ span:nth-child(4) {
 .carouseldiv {
   margin-bottom: 50px;
 }
-
