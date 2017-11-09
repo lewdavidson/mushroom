@@ -3,6 +3,14 @@ div .topper{
   margin: 20px;
   padding-top: 10px;
 }
+.container #answers {
+  width: 100%;
+  display: none;
+}
+
+#answers {
+  display: none;
+}
 
 .bordered{
     position: relative;
@@ -222,10 +230,10 @@ hr {
 }*/
 
 /*#answers {
-  width: 100%;*/
-  /*overflow-x: scroll;
-  white-space: nowrap;*/
-}
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+}*/
 
 .questiongroup {
   margin: 35px;
@@ -359,35 +367,17 @@ span:nth-child(4) {
   max-height: 250px;
 }
 
-
-.carouseldiv {
-  margin-bottom: 50px;
-  margin-left: -50px;
-  margin-top: 50px;
+.container #answers {
+  width: 100%
 }
 
-.carouseldiv @import url("https://fonts.googleapis.com/css?family=Hind:400,700");
-
-.carouseldiv h3 {
-  text-align: center;
-  font-weight: 400;
-  margin-bottom: 0;
+#answers {
+  width: 100%;
+  max-height: 3000px;
+  overflow-x: scroll;
+  white-space: nowrap;
 }
 
-.carousel-wrapper {
-  width: 110%;
-  height: 70%;
-  top: 50%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 12px 39px -19px rgba(0, 0, 0, 0.75);
-  overflow: hidden;
+.rightarrow {
+  margin-left: 50%;
 }
-.carousel-wrapper .carousel {
-  top: 50%;
-  height: auto;
-}
-
-.carousel-wrapper .carousel .carousel-cell.is-selected {
-  transform: scale(1.04);
-}
-
