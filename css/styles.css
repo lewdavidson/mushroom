@@ -1,8 +1,4 @@
-div .topper{
-  border-top: 1px solid #d8d8d8;
-  margin: 20px;
-  padding-top: 10px;
-}
+
 
 .bordered{
     position: relative;
@@ -19,15 +15,40 @@ div .topper{
     left: 0px;
     height: 10px;
     width: 100%;
-    background-size: 16px 15px;
+    background-size: 26px 25px;
     background-position: -5px -5px;
-    background-image: -webkit-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
-    background-image: -moz-radial-gradient(50% 0%, circle, white 48%, #adc2bb 55%);
-    background-image: radial-gradient(circle at 50% 0%, white 48%, #adc2bb 55%);
+    background-image: -webkit-radial-gradient(50% 0%, circle, white 48%, transparent 55%);
+    background-image: -moz-radial-gradient(50% 0%, circle, white 48%, transparent 55%);
+    background-image: radial-gradient(circle at 50% 0%, white 48%, transparent 55%);
 }
 
+.bordered2{
+    position: relative;
+    height: 100px;
+    width: 100%;
+    border-bottom: 20px solid #cddcd7;
+    background: #cddcd7;
+    padding-top: 10px;
+}
+.bordered2:after{
+    position: absolute;
+    content: '';
+    bottom: -30px;
+    left: 0px;
+    height: 10px;
+    width: 100%;
+    background-size: 26px 25px;
+    background-position: -5px -5px;
+    background-image: -webkit-radial-gradient(50% 0%, circle, #cddcd7 48%, transparent 55%);
+    background-image: -moz-radial-gradient(50% 0%, circle, #cddcd7 48%, transparent 55%);
+    background-image: radial-gradient(circle at 50% 0%, #cddcd7 48%, transparent 55%);
+}
+
+
+
 .stripe{
-  background-color: #adc2bb;
+  background-color: #cddcd7;
+  margin-bottom: -10px;
 }
 
 .icon{
@@ -51,7 +72,7 @@ hr {
   margin: 10px;
   height: 200px;
   width: 300px;
-  border-radius: 25px;
+  border-radius: 30px;
   border: 1px solid #BDC3C7;
   color: black;
 }
@@ -59,7 +80,11 @@ hr {
 
 .select:focus{
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 40px;
+}
+
+.select:visited{
+  font-style: italic;
 }
 
 /*button colors*/
@@ -70,6 +95,7 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 #gold{
@@ -78,6 +104,7 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 #white{
@@ -87,6 +114,7 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
 }
 
 #brown{
@@ -96,6 +124,7 @@ hr {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 160%;
+  color: white;
 }
 
 /*button shapes*/
@@ -103,7 +132,8 @@ hr {
 #round{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/round.jpg);
-  background-position: center;
+  background-position: center -20px;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -119,7 +149,8 @@ hr {
 #concave{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/concave.jpg);
-  background-position: center;
+  background-position: center -22px;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -144,7 +175,8 @@ hr {
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/fanned.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: center 17px;
+  background-color: white;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -196,7 +228,7 @@ hr {
 }
 
 #disclaimer {
-  background-color: #adc2bb;
+  background-color: #cddcd7;
 }
 
 .centered {
@@ -236,9 +268,11 @@ hr {
 
 #jumbo {
   height: 700px;
-  background-image: url("../img/new-header.jpg");
-  repeat: no-repeat;
+  background-image: url("../img/mushroom-header.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+
+
 }
 
 #jumbo h1 {
