@@ -352,3 +352,10 @@ span:nth-child(4) {
 .card-img-top {
   max-height: 250px;
 }
+
+
+
+
+.carouseldiv {
+  margin-bottom: 50px;
+}
