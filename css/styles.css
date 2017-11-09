@@ -3,6 +3,14 @@ div .topper{
   margin: 20px;
   padding-top: 10px;
 }
+.container #answers {
+  width: 100%;
+  display: none;
+}
+
+#answers {
+  display: none;
+}
 
 .bordered{
     position: relative;
@@ -53,8 +61,7 @@ hr {
   width: 300px;
   border-radius: 25px;
   border: 1px solid #BDC3C7;
-  font-size: 20px;
-  text-shadow: 3px 0px 8px #000000;
+  color: black;
 }
 
 
@@ -104,7 +111,7 @@ hr {
 #round{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/round.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,7 +127,7 @@ hr {
 #concave{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/concave.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -128,7 +135,7 @@ hr {
 #ruffled{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/ruffled.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -136,7 +143,7 @@ hr {
 #flat{
   border-top: 1px solid #BDC3C7;
   background-image: url(../img/flat.jpg);
-  background-position: center -67px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -152,10 +159,27 @@ hr {
 
 /*button groups*/
 
-#results {
-  /*display: none;*/
-  margin: 20px;
+#grouped{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/grouped.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+#single{
+  border-top: 1px solid #BDC3C7;
+  background-image: url(../img/single.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*#results {*/
+  /*display: none;*/
+  /*margin: 20px;
+}*/
 
 .card-img-top {
   height: 300px;
@@ -163,10 +187,10 @@ hr {
 
 .card {
   margin: 20px;
-  height: 700px;
+  height: 800px;
   max-width: 350px;
   float: none;
-  display: inline-block;
+  display: none;
   text-overflow: clip;
   overflow: hidden;
   white-space: normal;
@@ -175,28 +199,43 @@ hr {
   background-color: #f6d1de47;
 }
 
+
+
 .card-title {
   text-align: center;
 }
 
 #disclaimer {
+  background-color: #adc2bb;
+}
 
+.centered {
+  text-align: center;
+}
+
+.refresh {
+  background-color: #83dcff;
+  color: white;
+  border: solid 1px black;
+}
+
+.refresh:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .card-body ul {
   list-style-image: url("../img/mush-ul.png");
 }
 
-.container #answers {
+/*.container #answers {
   width: 100%
-}
+}*/
 
-#answers {
+/*#answers {
   width: 100%;
-  max-height: 3000px;
   overflow-x: scroll;
   white-space: nowrap;
-}
+}*/
 
 .questiongroup {
   margin: 35px;
@@ -224,29 +263,38 @@ hr {
   font-family: 'Carme', sans-serif;
 }
 
-#bottom-arrow {
-  margin top: 20px;
-  margin-bottom: 20px;
-  display
-}
+/*.card #answers {
+  display: inline-block;
+  width: 100%;
+  max-height: 3000px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}*/
 
 #submit {
-  width: 100%;
-  margin-top: 60px;
-  height: 70px;
+  width: 50%;
+  margin-left: 22%;
+  margin-top: 50px;
+  border-radius: 25px;
+  font-family: 'Carme', sans-serif;
+  height: 50px;
+  background-color: #adc2bb;
+  border: solid 1px black;
 }
 
-  /*.bestguess {
-  margin-bottom: 150px;
-  }*/
+#submit:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
 
-  /*button*/
+#top-arrow {
+  margin-top: 90px;
+}
+
 .center-con {
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: center;
-    margin-top: -50px;
 }
 
 .round {
@@ -257,9 +305,6 @@ hr {
     border-radius: 100%;
 }
 
-.rightarrow {
-  margin-left: 50%;
-}
 
 span {
     z-index: 999;
@@ -321,4 +366,13 @@ span:nth-child(4) {
 
 .card-img-top {
   max-height: 250px;
+}
+
+.container #answers {
+  width: 100%
+}
+
+
+.rightarrow {
+  margin-left: 50%;
 }

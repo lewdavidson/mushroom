@@ -17,6 +17,14 @@
           <h1 class="display-1">Mushroom Identifier <br>
             <p class="lead">Which fungus is among-us?</p>
           </h1>
+          <div class="center-con" id="top-arrow">
+            <div class="round">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -46,7 +54,7 @@
       <div class="jumbotron jumbotron-fluid stripe">
         <div class="container-fluid">
           <div class="col-sm-9 offset-md-2">
-            <img src="img/icons/shape.svg" class="icon" style="width:100px">
+            <img src="img/icons/compass.svg" class="icon" style="width:100px">
             <h1 class="display-4"><br>How is it shaped?</h1>
             <div class="row">
               <div class="row">
@@ -77,324 +85,264 @@
         </div>
       </div>
     </div>
-    <button type="button" name="button" id="submit">Show results</button>
+    <div class="wrapper">
+      <button type="button" name="button" id="submit">Show Me My Mushroom</button>
+    </div>
 <!-- RESULTS -->
 
-      <div class="answers container" id="answers">
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="morell">
-              <img class="card-img-top" src="img/morel-answer.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Morel</h3>
-                <ul>
-                  <li>Origin: France, Germany, USA</li>
-                  <li>Edible: Yes! Beware of imposters!</li>
-                  <li>ID Tips: Cup is longer than the stem, hollow on the inside, available only in spring. Toxic look-alikes will have stuffing inside, the cap is loose from the stem and equal in size.</li>
-                  <li>Pairs Well With: Butter, Garlic, White Meat. They are best simply sauted in butter with good salt but can be added to delicate protiens that won't mask their flavor.</li>
-                  <li><a href="https://en.wikipedia.org/wiki/Morchella_esculenta">Learn More</a></li>
-                </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="chanterelle">
-              <img class="card-img-top" src="img/chanterelle-answer.jpg" alt="Card image cap">
-                <div class="card-body" id="nowrap">
-                  <h3 class="card-title">Chanterelle</h3>
-                  <ul>
-                    <li>Origin:North America</li>
-                    <li>Edible: Yes! But beware of imposters!</li>
-                    <li>ID Tips: Bright yellow-gold in color, always found near trees, gills are solidly part of the cap and stem (not removeable). Imposters include the Jack-O-Lantern and "False Chanterelle" mushrooms. They are both more orange in color with removeable gills.</li>
-                    <li>Pairs Well With: Butter and garlic. Make sure they are dried well so you can ent up with a crispy-edged tender mushroom!</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Chanterelle">Learn More</a></li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="hen">
-              <img class="card-img-top" src="img/hen-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Hen of the Woods</h3>
-                  <ul>
-                    <li>Origin: China, Japan, and North America</li>
-                    <li>Edible: Yes!</li>
-                    <li>ID Tips: These mushrooms grow at the base of trees in clusters. They are often said to resemble a roosting hen against a tree, hence the name! They are identifiable by their spoon shaped cups and brown color.</li>
-                    <li>Pairs Well With: Risotto, Eggs, Pasta. Peel them apart into strips!</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Grifola_frondosa">Learn More</a></li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-        <!-- </div>
-        <div class="row"> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="turkeytail">
-              <img class="card-img-top" src="img/turkeytail-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Turkey Tail</h3>
-                  <ul>
-                    <li>Origin: China</li>
-                    <li>Edible: No</li>
-                    <li>ID Tips: This mushroom resembles a fanned out turkey's tail whith brown or reddish rings. On the underside you will find small holes that house the spores for this fan fungi!</li>
-                    <li>Pairs Well With: Not goot to eat, is known to e an immune-booster, but doesn't have a very plesant flavor.</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Trametes_versicolor">Learn More</a></li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="lobster">
-              <img class="card-img-top" src="img/lobster-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Lobster Mushroom</h3>
-                  <ul>
-                    <li>Origin: North America</li>
-                    <li>Edible: Yes</li>
-                    <li>ID Tips: This mushroom is known to resemble the shell of a cooked lobster (bright red) with a white interior. There are riged gills on the underside with a small cup on the top!</li>
-                    <li>Pairs Well With: Seafood, butter, garlic. Lobster mushrooms are said to have a seafood-type flavor when cooked.</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Hypomyces_lactifluorum">Learn More</a></li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="lionsmane">
-              <img class="card-img-top" src="img/lions-mane-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Lion's Mane</h3>
-                  <ul>
-                    <li>Origin: North America, Europe, Asia</li>
-                    <li>Edible: Yes!</li>
-                    <li>ID Tips: A very distinct mushroom! Is covered in what looks like a mine of bright white hair that grows longer as the mushroom lives. This mushroom is usually found on a rotting log.</li>
-                    <li>Pairs Well With: Smoke. This hearty mushroom can stand up to some time in a smoker or even a slice fried in butter and put on a sandwich!</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Hericium_erinaceus">Learn More</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="enoki">
-                <img class="card-img-top" src="img/enoki-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Enoki</h3>
-                  <ul>
-                    <li>Origin:Japan, SE Asia</li>
-                    <li>Edible: Yes</li>
-                    <li>Ideal Habitat: cultivated in dark, CO2-rich environments</li>
-                    <li>Pairs Well With:Soy saucey savory dishes</li>
-                    <li><a href="http://www.onegreenplanet.org/vegan-food/how-to-use-enoki-mushrooms/">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="cloudear">
-                <img class="card-img-top" src="img/cloudear-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Cloud Ear</h3>
-                  <ul>
-                    <li>Origin:Various</li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat:Mountainous Regions</li>
-                    <li>Pairs Well With:soups, medicinal</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Cloud_ear_fungus">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="honshimeji">
-                <img class="card-img-top" src="img/honshimeji-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Honshimeji (Brown Beech)</h3>
-                  <ul>
-                    <li>Origin:East Asia</li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat:Grows on hardwood trees (ie, beech)</li>
-                    <li>Pairs Well With:Seafood, grilled meats, citrus</li>
-                    <li><a href="http://www.specialtyproduce.com/produce/Hon_Shimeji_Brown_Beech_Mushrooms_2679.php">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="matsutake">
-                <img class="card-img-top" src="img/matsutake-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Matsutake</h3>
-                    <li>Origin:Pacific Rim</li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat:Jack Pine & hardwood forests</li>
-                    <li>Pairs Well With:Everything</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Matsutake">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="peurotuseryngii">
-                <img class="card-img-top" src="img/peurotuseryngii-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Peurotus Eryngii</h3>
-                  <ul>
-                    <li>Origin:Mediterranean/li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat:Roots of herbaceous plants</li>
-                    <li>Pairs Well With:Savory dishes</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Pleurotus_eryngii">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="shiitake">
-                <img class="card-img-top" src="img/shiitake-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Shiitake</h3>
-                  <ul>
-                    <li>Origin:East Asia</li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat: warm & moist deciduous forests</li>
-                    <li>Pairs Well With:Everything</li>
-                    <li><a href="http://foodfacts.mercola.com/shiitake-mushrooms.html">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="whitebeech">
-                <img class="card-img-top" src="img/whitebeech-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">White Beech</h3>
-                  <ul>
-                    <li>Origin:East Asia</li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat:beech tree</li>
-                    <li>Pairs Well With:everythin</li>
-                    <li><a href="http://foodfacts.mercola.com/shiitake-mushrooms.html">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-            <!-- <div class="col-md-4"> -->
-              <div class="card" style="width: 25rem;" id="woodear">
-                <img class="card-img-top" src="img/woodear-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Woodear</h3>
-                  <ul>
-                    <li>Origin:China</li>
-                    <li>Edible:Yes</li>
-                    <li>Ideal Habitat:Humid areas</li>
-                    <li>Pairs Well With:Citrus, vanilla, savory</li>
-                    <li><a href="http://www.specialtyproduce.com/produce/Wood_Ear_Mushrooms_720.php">More Info</a></li>
-                  </ul>
-                </div>
-              </div>
-            <!-- </div> -->
-
-
-
-        <!-- </div> -->
-        <!-- <div class="row"> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="jackcard">
-              <img class="card-img-top" src="img/jackolantern-answer.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Jack-O-Lantern</h3>
-                <ul>
-                  <li>Origin: North America and Europe</li>
-                  <li>Edible: NO!</li>
-                  <li>ID Tips: This mushroom looks very similar to the tasty chanterelle but is toxic! The give-aways are that it grows in clumps, are usually more orange in color (as opposed to gold), and have "true" gills, or removable gills on the bottom.</li>
-                  <li>Pairs Well With: Do not eat this mushroom.</li>
-                  <li><a href="https://en.wikipedia.org/wiki/Omphalotus_olearius">Learn More<a></li>
-                </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="bluechanterelle">
-              <img class="card-img-top" src="img/blue-chanterelle-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Blue Chanterelle</h3>
-                  <ul>
-                    <li>Origin:</li>
-                    <li>Edible:</li>
-                    <li>ID Tips:</li>
-                    <li>Pairs Well With:</li>
-                    <li>Learn More</li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="button">
-              <img class="card-img-top" src="img/button-answer.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Button</h3>
-                  <ul>
-                    <li>Origin: Europe and North America</li>
-                    <li>Edible: Very</li>
-                    <li>ID Tips: These mushrooms are found in groups, usually in grasst fields in the presence of manure or after the rain. They can be brown or white in color. Beware that the toxic Destroying Angel mushroom looks very similar, but it lives in mossy woods.</li>
-                    <li>Pairs Well With: Almost anything. These are the utility mushroooms of the food world! earty enough to do most things!</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Agaricus_bisporus">Learn More</a></li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-        <!-- </div> -->
-        <!-- <div class="row"> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;" id="indigomilkcap">
-              <img class="card-img-top" src="img/indigo-answer.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h3 class="card-title">Indigo Milkcap</h3>
-                <ul>
-                  <li>Origin:North America, East Asia, Central America</li>
-                  <li>Edible: Yes!</li>
-                  <li>ID Tips: This mushroom has a distinct dark blue color and grows only on the ground! The flesh yields an indigo "milk" when cut which turns green in the air.</li>
-                  <li>Pairs Well With: Anything that goes with pepper. These mushrooms have a well-noted peppery bite to them!</li>
-                  <li><a href="https://en.wikipedia.org/wiki/Lactarius_indigo">Learn More</a></li>
-                </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;">
-              <img class="card-img-top" src="img/white-color.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Random Placeholder</h3>
-                  <ul>
-                    <li>Origin:</li>
-                    <li>Edible:</li>
-                    <li>ID Tips:</li>
-                    <li>Pairs Well With:</li>
-                    <li>Learn More</li>
-                  </ul>
-              </div>
-            </div>
-          <!-- </div> -->
-          <!-- <div class="col-md-4"> -->
-            <div class="card" style="width: 25rem;">
-              <img class="card-img-top" src="img/white-color.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h3 class="card-title">Random placeholder</h3>
-                  <ul>
-                    <li>Origin:</li>
-                    <li>Edible:</li>
-                    <li>ID Tips:</li>
-                    <li>Pairs Well With:</li>
-                    <li>Learn More</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-        <div class="rightarrow">
-        <img src="img/arrow.png" alt="arrow">
+<div class="answers container" id="answers">
+  <div class="row justify-content-md-center">
+    
+      <div class="card hidden" style="width: 25rem;" id="morell">
+        <img class="card-img-top" src="img/morel-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Morel</h3>
+          <ul>
+            <li>Origin: France, Germany, USA</li>
+            <li>Edible: Yes! Beware of imposters!</li>
+            <li>ID Tips: Cup is longer than the stem, hollow on the inside, available only in spring. Toxic look-alikes will have stuffing inside, the cap is loose from the stem and equal in size.</li>
+            <li>Pairs Well With: Butter, Garlic, White Meat. They are best simply sauted in butter with good salt but can be added to delicate protiens that won't mask their flavor.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Morchella_esculenta">Learn More</a></li>
+          </ul>
         </div>
+      </div>
+
+
+      <div class="card hidden" style="width: 25rem;" id="chanterelle">
+        <img class="card-img-top" src="img/chanterelle-answer.jpg" alt="Card image cap">
+        <div class="card-body" id="nowrap">
+          <h3 class="card-title">Chanterelle</h3>
+          <ul>
+            <li>Origin:North America</li>
+            <li>Edible: Yes! But beware of imposters!</li>
+            <li>ID Tips: Bright yellow-gold in color, always found near trees, gills are solidly part of the cap and stem (not removeable). Imposters include the Jack-O-Lantern and "False Chanterelle" mushrooms. They are both more orange in color with removeable gills.</li>
+            <li>Pairs Well With: Butter and garlic. Make sure they are dried well so you can ent up with a crispy-edged tender mushroom!</li>
+            <li><a href="https://en.wikipedia.org/wiki/Chanterelle">Learn More</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <div class="card hidden" style="width: 25rem;" id="hen">
+        <img class="card-img-top" src="img/hen-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Hen of the Woods</h3>
+          <ul>
+            <li>Origin: China, Japan, and North America</li>
+            <li>Edible: Yes!</li>
+            <li>ID Tips: These mushrooms grow at the base of trees in clusters. They are often said to resemble a roosting hen against a tree, hence the name! They are identifiable by their spoon shaped cups and brown color.</li>
+            <li>Pairs Well With: Risotto, Eggs, Pasta. Peel them apart into strips!</li>
+            <li><a href="https://en.wikipedia.org/wiki/Grifola_frondosa">Learn More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="turkeytail">
+        <img class="card-img-top" src="img/turkeytail-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Turkey Tail</h3>
+          <ul>
+            <li>Origin: China</li>
+            <li>Edible: No</li>
+            <li>ID Tips: This mushroom resembles a fanned out turkey's tail whith brown or reddish rings. On the underside you will find small holes that house the spores for this fan fungi!</li>
+            <li>Pairs Well With: Not goot to eat, is known to e an immune-booster, but doesn't have a very plesant flavor.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Trametes_versicolor">Learn More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="lobster">
+        <img class="card-img-top" src="img/lobster-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Lobster Mushroom</h3>
+          <ul>
+            <li>Origin: North America</li>
+            <li>Edible: Yes</li>
+            <li>ID Tips: This mushroom is known to resemble the shell of a cooked lobster (bright red) with a white interior. There are riged gills on the underside with a small cup on the top!</li>
+            <li>Pairs Well With: Seafood, butter, garlic. Lobster mushrooms are said to have a seafood-type flavor when cooked.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Hypomyces_lactifluorum">Learn More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="lionsmane">
+        <img class="card-img-top" src="img/lions-mane-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Lion's Mane</h3>
+          <ul>
+            <li>Origin: North America, Europe, Asia</li>
+            <li>Edible: Yes!</li>
+            <li>ID Tips: A very distinct mushroom! Is covered in what looks like a mine of bright white hair that grows longer as the mushroom lives. This mushroom is usually found on a rotting log.</li>
+            <li>Pairs Well With: Smoke. This hearty mushroom can stand up to some time in a smoker or even a slice fried in butter and put on a sandwich!</li>
+            <li><a href="https://en.wikipedia.org/wiki/Hericium_erinaceus">Learn More</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="enoki">
+        <img class="card-img-top" src="img/enoki-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Enoki</h3>
+          <ul>
+            <li>Origin: Japan and SE Asia</li>
+            <li>Edible: Yes!</li>
+            <li>ID Tips: In the wild, this mushroom grows with a velvety orange-colored cap and a thin stem. The supermarket versions are a pale white color that comes from growing in the dark. Beware! They bare a stron resemblance to the deadly Galina mushroom, which has a yellow spore print asopposed to Enoki's white print.</li>
+            <li>Pairs Well With: Soy Sauce, fish sauce, noodles and stir fries. </li>
+            <li><a href="http://www.onegreenplanet.org/vegan-food/how-to-use-enoki-mushrooms/">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="cloudear">
+        <img class="card-img-top" src="img/cloudear-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Cloud Ear</h3>
+          <ul>
+            <li>Origin: India</li>
+            <li>Edible: Yes</li>
+            <li>ID Tips:  The cloud ear resumbles a droopy human ear. It has a light brown cap with light fuzz covering it. It is often found growing out of a tree alone or in pairs.</li>
+            <li>Pairs Well With: Strong flavors. Slice this guy up and grill over an open flame!</li>
+            <li><a href="https://en.wikipedia.org/wiki/Cloud_ear_fungus">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="honshimeji">
+        <img class="card-img-top" src="img/honshimeji-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Hon Shimeji (Brown Beech)</h3>
+          <ul>
+            <li>Origin: East Asia</li>
+            <li>Edible: Yes</li>
+            <li>ID Tips: This mushrooms have ivory white colored smooth petite globular caps and identically colored slender stems that connect to a thick white porous inedible base which allows the mushrooms to grow. </li>
+            <li>Pairs Well With: Seafood, Grilled Meats, and Citrus fruits</li>
+            <li><a href="http://www.specialtyproduce.com/produce/Hon_Shimeji_Brown_Beech_Mushrooms_2679.php">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="matsutake">
+        <img class="card-img-top" src="img/matsutake-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Matsutake</h3>
+          <ul>
+            <li>Origin: Asia, Europe, North America</li>
+            <li>Edible: Yes</li>
+            <li>ID Tips: These mushrooms grow pearly white from the dround with a thick stem that should never be hollow. There is a small cap on tip with a curled rim and a small ring around the stem!</li>
+            <li>Pairs Well With: Stronly-spiced dishes. The Matsutake is known for its spicy, robust flavor so be sure to pair it with something that can stand up to a bit of spice!</li>
+            <li><a href="https://en.wikipedia.org/wiki/Matsutake">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="peurotuseryngii">
+        <img class="card-img-top" src="img/peurotuseryngii-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Peurotus Eryngii</h3>
+          <ul>
+            <li>Origin: Mediterranean</li>
+            <li>Edible: Yes</li>
+            <li>ID Tips: This mushroom is the largest mushroom in the oyster family. It bears similarity to its smaller cousins, but with a thicker white stalk and more robust top cup.</li>
+            <li>Pairs Well With: Anything, but it's better cooked. It has little flavor when raw but develops a rich umami and abolone texture when cooked.</li>
+            <li><a href="https://en.wikipedia.org/wiki/Pleurotus_eryngii">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="shiitake">
+        <img class="card-img-top" src="img/shiitake-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Shiitake</h3>
+          <ul>
+            <li>Origin: East Asia</li>
+            <li>Edible: Yes</li>
+            <li>Ideal Habitat: This mushroom grows in small clusters with a light brown cap. It has small white gills and a light brown stem and is often found growing from a tree!</li>
+            <li>Pairs Well With: Noodles, gravys, sauces, stocks. The shiitake has an extremely intense flavor (especially when dried) and can lend a lot to anything that needs a flavor boost.</li>
+            <li><a href="http://foodfacts.mercola.com/shiitake-mushrooms.html">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="whitebeech">
+        <img class="card-img-top" src="img/whitebeech-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">White Beech</h3>
+          <ul>
+            <li>Origin: East Asia</li>
+            <li>Edible: Yes</li>
+            <li>ID Tips: This mushrooms have ivory white colored smooth petite globular caps and identically colored slender stems that connect to a thick white porous inedible base which allows the mushrooms to grow.</li>
+            <li>Pairs Well With: Seafood, Grilled Meats, and Citrus fruits</li>
+            <li><a href="http://foodfacts.mercola.com/shiitake-mushrooms.html">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="card hidden" style="width: 25rem;" id="woodear">
+        <img class="card-img-top" src="img/woodear-answer.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Woodear</h3>
+          <ul>
+            <li>Origin: China</li>
+              <li>Edible: Yes</li>
+              <li>ID Tips: This mushroom bears a strong resemblance to a human ear. It can be a light brown to dark-purple-ish color in the wild. The important thing to not overlook is its texture. It has a jelly like squish when pinched which differentiates it from other cup mushrooms.</li>
+              <li>Pairs Well With: Soups and stews. It can also be dried for a more crunchy texture!</li>
+              <li><a href="http://www.specialtyproduce.com/produce/Wood_Ear_Mushrooms_720.php">More Info</a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="card hidden" style="width: 25rem;" id="jackcard">
+          <img class="card-img-top" src="img/jackolantern-answer.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Jack-O-Lantern</h3>
+            <ul>
+              <li>Origin: North America and Europe</li>
+              <li>Edible: NO!</li>
+              <li>ID Tips: This mushroom looks very similar to the tasty chanterelle but is toxic! The give-aways are that it grows in clumps, are usually more orange in color (as opposed to gold), and have "true" gills, or removable gills on the bottom.</li>
+              <li>Pairs Well With: Do not eat this mushroom.</li>
+              <li><a href="https://en.wikipedia.org/wiki/Omphalotus_olearius">Learn More<a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card hidden" style="width: 25rem;" id="bluechanterelle">
+          <img class="card-img-top" src="img/blue-chanterelle-answer.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Blue Chanterelle</h3>
+              <ul>
+                <li>Origin: Europe, North America, and Central America</li>
+                <li>Edible: Yes</li>
+                <li>ID Tips: Blue Chanterelle mushrooms are dark bluish-purple to black in color and are found growing in clusters, typically at the base of spruce and fir trees. They are similar in size to their cousins of the golden variety.</li>
+                <li>Pairs Well With: Butter and garlic. Make sure they are dried well so you can ent up with a crispy-edged tender mushroom!</li>
+                <li><a href="https://en.wikipedia.org/wiki/Chanterelle">Learn More</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="card hidden" style="width: 25rem;" id="button">
+          <img class="card-img-top" src="img/button-answer.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h3 class="card-title">Button</h3>
+              <ul>
+                <li>Origin: Europe and North America</li>
+                <li>Edible: Very</li>
+                <li>ID Tips: These mushrooms are found in groups, usually in grasst fields in the presence of manure or after the rain. They can be brown or white in color. Beware that the toxic Destroying Angel mushroom looks very similar, but it lives in mossy woods.</li>
+                <li>Pairs Well With: Almost anything. These are the utility mushroooms of the food world! earty enough to do most things!</li>
+                <li><a href="https://en.wikipedia.org/wiki/Agaricus_bisporus">Learn More</a></li>
+              </ul>
+          </div>
+        </div>
+        <div class="card hidden" style="width: 25rem;" id="indigomilkcap">
+          <img class="card-img-top" src="img/indigo-answer.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h3 class="card-title">Indigo Milkcap</h3>
+            <ul>
+              <li>Origin:North America, East Asia, Central America</li>
+              <li>Edible: Yes!</li>
+              <li>ID Tips: This mushroom has a distinct dark blue color and grows only on the ground! The flesh yields an indigo "milk" when cut which turns green in the air.</li>
+              <li>Pairs Well With: Anything that goes with pepper. These mushrooms have a well-noted peppery bite to them!</li>
+              <li><a href="https://en.wikipedia.org/wiki/Lactarius_indigo">Learn More</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
         <div class="jumbotron" id="disclaimer">
+          <img src="img/icons/danger.svg" class="icon" style="width:100px">
           <h3 class="display-4">DISCLAIMER:</h3>
-          <p class="lead">We are not responsible for any hospitalization, dismemberment, sickness, or death as a result of using our site. Mushrooms are wonderful but very dangerous! Always be sure that you have the right mushroom before consuming. When testin a mushroom for the first time, make sure to eat a small piece and wait a full 24 hours before consuming more to ensure minimum risk of poisoning! <br> Have another mushroom? click the button to identify it!</p>
+          <p class="lead">We are not responsible for any hospitalization, dismemberment, sickness, or death as a result of using our site. Mushrooms are wonderful but very dangerous! Always be sure that you have the right mushroom before consuming. When testin a mushroom for the first time, make sure to eat a small piece and wait a full 24 hours before consuming more to ensure minimum risk of poisoning! </p>
+          <div class="centered">
+            <p class="lead"> Have another mushroom? Click the button to identify it!</p>
+            <button class="refresh btn" onClick="window.location.href=window.location.href" type="submit">To the Top!</button>
+          </div>
         </div>
       </div>
  <!-- end of container -->
