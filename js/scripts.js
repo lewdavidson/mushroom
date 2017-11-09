@@ -64,6 +64,9 @@ $(document).ready(function(){
   $("#submit").click(function(){
     $("#results").show();
   });
+  $("#top-arrow").click(function(){
+    $("#jumbo").slideUp();
+  });
 
 
   $("#blue").click(function(event) {
