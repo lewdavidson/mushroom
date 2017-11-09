@@ -141,6 +141,7 @@ $(document).ready(function(){
         // WALL OF MUSHROOM CARDS! (dry this code up?)//
         $("#submit").click(function(event){
           $("#answers").show();
+          $("#disclaimer").show();
           for(var i = 0; i < filteredShrooms.length; i++){
             if(filteredShrooms.includes(chanterelle)){
               $("#chanterelle").show();

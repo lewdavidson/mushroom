@@ -205,8 +205,13 @@ hr {
   text-align: center;
 }
 
+.wrapper {
+  margin-bottom: 30px;
+}
+
 #disclaimer {
   background-color: #adc2bb;
+  display: none;
 }
 
 .centered {
@@ -287,7 +292,7 @@ hr {
 }
 
 #top-arrow {
-  margin-top: 90px;
+  margin-top: -40px;
 }
 
 .center-con {
