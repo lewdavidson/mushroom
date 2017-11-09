@@ -360,4 +360,8 @@ span:nth-child(4) {
   max-height: 250px;
 }
 
-/*new button*/
+
+.carouseldiv {
+  margin-bottom: 50px;
+}
+

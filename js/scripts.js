@@ -67,6 +67,7 @@ $(document).ready(function(){
   $("#top-arrow").click(function(){
     $("#jumbo").slideUp();
   });
+  $('.carousel').carousel()
 
 
   $("#blue").click(function(event) {
