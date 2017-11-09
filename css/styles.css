@@ -39,7 +39,7 @@ div .topper{
   margin-bottom: 50px;
 }
 
-hr{
+hr {
   border: 4px solid #d8d8d8;
 }
 
@@ -175,17 +175,22 @@ hr{
   background-color: #f6d1de47;
 }
 
-.bestguess {
-  margin-bottom: 150px;
+.card-title {
+  text-align: center;
+}
+
+#disclaimer {
+  
 }
 
 .card-body ul {
   list-style-image: url("../img/mush-ul.png");
 }
 
-container #answers {
+.container #answers {
   width: 100%
 }
+
 #answers {
   width: 100%;
   max-height: 3000px;
@@ -218,6 +223,23 @@ container #answers {
   width: 100%;
   font-family: 'Carme', sans-serif;
 }
+
+#bottom-arrow {
+  margin top: 20px;
+  margin-bottom: 20px;
+  display
+}
+
+#submit {
+  width: 100%;
+  margin-top: 60px;
+  height: 70px;
+}
+
+  /*.bestguess {
+  margin-bottom: 150px;
+  }*/
+
   /*button*/
 .center-con {
     display: flex;
@@ -238,6 +260,7 @@ container #answers {
 .rightarrow {
   margin-left: 50%;
 }
+
 span {
     z-index: 999;
     height: 3px;
@@ -298,10 +321,4 @@ span:nth-child(4) {
 
 .card-img-top {
   max-height: 250px;
-}
-
-#submit {
-  width: 100%;
-  margin-top: 60px;
-  height: 70px;
 }
