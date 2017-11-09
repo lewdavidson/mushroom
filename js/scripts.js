@@ -65,6 +65,7 @@ $(document).ready(function(){
     $("#jumbo").slideUp();
   });
 
+  
   $("#blue").click(function(event) {
     searchFor.push({color: "blue"});
     searchParams = filterCriteria(searchFor);
