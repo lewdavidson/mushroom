@@ -190,7 +190,7 @@ hr {
   height: 800px;
   max-width: 350px;
   float: none;
-  display: inline-block;
+  display: none;
   text-overflow: clip;
   overflow: hidden;
   white-space: normal;
@@ -198,6 +198,8 @@ hr {
   border: solid 1px;
   background-color: #f6d1de47;
 }
+
+
 
 .card-title {
   text-align: center;
@@ -261,6 +263,13 @@ hr {
   font-family: 'Carme', sans-serif;
 }
 
+/*.card #answers {
+  display: inline-block;
+  width: 100%;
+  max-height: 3000px;
+  overflow-x: scroll;
+  white-space: nowrap;
+}*/
 
 #submit {
   width: 50%;
@@ -277,11 +286,6 @@ hr {
    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-  /*.bestguess {
-  margin-bottom: 150px;
-  }*/
-
-  /*button*/
 #top-arrow {
   margin-top: 90px;
 }
@@ -301,9 +305,6 @@ hr {
     border-radius: 100%;
 }
 
-/*.rightarrow {
-  margin-left: 50%;
-}*/
 
 span {
     z-index: 999;
@@ -371,12 +372,6 @@ span:nth-child(4) {
   width: 100%
 }
 
-#answers {
-  width: 100%;
-  max-height: 3000px;
-  overflow-x: scroll;
-  white-space: nowrap;
-}
 
 .rightarrow {
   margin-left: 50%;
