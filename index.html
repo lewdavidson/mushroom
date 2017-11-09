@@ -11,129 +11,73 @@
     <title>Mushroom Identifier</title>
   </head>
   <body>
-      <div class="jumbotron jumbotron-fluid" id="jumbo">
-        <div class="container">
-          <div class="jumbo-text">
-            <h1 class="display-1">Mushroom Identifier <br>
-              <p class="lead">Which fungus is among-us?</p>
-            </h1>
-            <div class="center-con" id="top-arrow">
-              <div class="round">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+    <div class="jumbotron jumbotron-fluid" id="jumbo">
+      <div class="container">
+        <div class="jumbo-text">
+          <h1 class="display-1">Mushroom Identifier <br>
+            <p class="lead">Which fungus is among-us?</p>
+          </h1>
+        </div>
+      </div>
+    </div>
+
+  <!-- Q: COLOR -->
+    <div class="main-page">
+      <div class="col-sm-9 offset-md-2">
+        <img src="img/icons/color.svg" class="icon" style="width:100px">
+        <h1 class="display-4">Which color most closely represents <br>your mushroom?</h1>
+        <div class="row">
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn select btn-primary" id="blue" name="button">Blue</button>
+              <button type="button" class="btn select btn-primary" id="white" name="button">White</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <button type="button" class="btn select btn-primary" id="gold" name="button">Gold</button>
+              <button type="button" class="btn select btn-primary" id="brown" name="button">Brown</button>
             </div>
           </div>
         </div>
       </div>
-
-
-<!-- HEADER GOES HERE -->
-  <div class="main-page"> <!-- no close-->
-        <div class="row offset-md-1">
-          <div class="col-md-3 topper">
-            <h4>Find a mushroom</h4>
-          </div>
-          <div class="col-md-3 topper">
-            <h4>Observe mushroom</h4>
-          </div>
-          <div class="col-md-3 topper">
-            <h4>ID! mushroom</h4>
-          </div>
-        </div>
-
-
-  <!-- Q: COLOR -->
-
-
-  <div class="main-page">
-
-      <div class="row">
-        <div class="col-sm-9 offset-md-2">
-          <img src="img/icons/color.svg" class="icon" style="width:100px">
-          <h1 class="display-4">Which color most closely represents <br>your mushroom?</h1>
-          <div class="row">
-            <div class="row">
-              <div class="col">
-                <button type="button" class="btn select btn-primary" id="blue" name="button">Blue</button>
-                <button type="button" class="btn select btn-primary" id="white" name="button">White</button>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <button type="button" class="btn select btn-primary" id="gold" name="button">Gold</button>
-                <button type="button" class="btn select btn-primary" id="brown" name="button">Brown</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
 <!-- Q: SHAPE -->
-<div class="bordered"></div>
+      <div class="bordered"></div>
       <div class="jumbotron jumbotron-fluid stripe">
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-9 offset-md-2">
-              <img src="img/icons/shape.svg" class="icon" style="width:100px">
-              <h1 class="display-4"><br>How is it shaped?</h1>
+          <div class="col-sm-9 offset-md-2">
+            <img src="img/icons/shape.svg" class="icon" style="width:100px">
+            <h1 class="display-4"><br>How is it shaped?</h1>
+            <div class="row">
               <div class="row">
                 <div class="row">
-                  <div class="row">
-                    <button type="button" class="btn select btn-dark" id="round" name="button">Round</button>
-                    <button type="button" class="btn select btn-dark" id="ruffled" name="button">Ruffled</button>
-                    <button type="button" class="btn select btn-dark" id="fan" name="button">Fanned</button>
-                  </div>
-
-
-                  <div class="row">
-
-                    <button type="button" class="btn select btn-dark" id="spear" name="button">Spear</button>
-                    <button type="button" class="btn select btn-dark" id="flat" name="button">Flat</button>
-                    <button type="button" class="btn select btn-dark" id="concave" name="button">Concave</button>
-                  </div>
+                  <button type="button" class="btn select btn-dark" id="round" name="button">Round</button>
+                  <button type="button" class="btn select btn-dark" id="ruffled" name="button">Ruffled</button>
+                  <button type="button" class="btn select btn-dark" id="fan" name="button">Fanned</button>
+                </div>
+                <div class="row">
+                  <button type="button" class="btn select btn-dark" id="spear" name="button">Spear</button>
+                  <button type="button" class="btn select btn-dark" id="flat" name="button">Flat</button>
+                  <button type="button" class="btn select btn-dark" id="concave" name="button">Concave</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
 <!-- Q: GROUPED -->
-
-      <div class="row">
-        <div class="col-sm-9 offset-md-2">
-          <img src="img/icons/mush-group.svg" class="icon" style="width:100px">
-          <h1 class="display-4 question"><br>Is it grouped or alone?</h1>
-          <div class="row">
-            <div class="col offset-md-1">
-              <button type="button" class="btn select pick btn-dark" id="grouped" name="button">Grouped</button>
-              <button type="button" class="btn select pick btn-dark" id="single" name="button">Single</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-    <div class="row bestguess">
       <div class="col-sm-9 offset-md-2">
-        <div class="center-con" id="bottom-arrow">
-          <div class="round" style="background-color: black">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+        <img src="img/icons/mush-group.svg" class="icon" style="width:100px">
+        <h1 class="display-4 question"><br>Is it grouped or alone?</h1>
+        <div class="row">
+          <div class="col offset-md-1">
+            <button type="button" class="btn select pick btn-dark" id="grouped" name="button">Grouped</button>
+            <button type="button" class="btn select pick btn-dark" id="single" name="button">Single</button>
           </div>
         </div>
       </div>
     </div>
-
-  </div>
-</div><!--end of main page -->
-
+    <button type="button" name="button" id="submit">Show results</button>
 <!-- RESULTS -->
 
       <div class="answers container" id="results">
