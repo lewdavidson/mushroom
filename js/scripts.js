@@ -165,7 +165,7 @@ $(document).ready(function(){
 
         $("#bottom-arrow").click(function(event){
           $(".main-page").slideUp();
-          $("#results").show();
+          $("#answers").show();
           for(var i = 0; i < filteredShrooms.length; i++){
 
             if(filteredShrooms.includes(chanterelle)){
